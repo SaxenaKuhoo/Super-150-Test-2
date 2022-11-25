@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="bor">
+        <div class="head">
+            <h1>Search your favourite movies here</h1>
+        </div>
+        <br>
+        <div class="box">
+            <form id="SearchForm">
+                <!-- <input type="text" class="search-box" id="item" style = "border: solid black" value="Search here..">
+                <input type="submit" class="btn btn-dark" id = "submit-btn" value="Search">
+            </form> -->
+            <input type="search" name="search-bar" id="search-bar" placeholder="search here...">
+            <input type="button" value="Search" id = "search-bar-btn">
+            </form>
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="choose-theme">
+    <form class = "form-control">
+        <fieldset  class = "color-changer">
+          <input type="radio" id = "gray" name = "theme" checked>
+          <label for="gray"></label>
+          <input type="radio" id = "pink" name = "theme">
+          <label for="pink"></label>
+          <input type="radio" id = "blue" name = "theme">
+          <label for="blue"></label>
+          <input type="radio" id = "green" name = "theme">
+          <label for="green"></label>
+          <input type="radio" id = "black" name = "theme">
+          <label for="black"></label>
+        </fieldset>
+    </div>
+    <hr width="80%">
+    <div class="show" id = "show"></div>
+    
+</body>
+<script src="/script.js"></script>
+</html>

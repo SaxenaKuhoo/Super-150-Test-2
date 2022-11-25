@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    background-color: var(--radio-color);
+    color: white;
+    
+}
+.bor{
+    border: 2px solid white;
+}
+.box{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+#SearchForm{
+    font-size: large;
+}
+#search-bar-btn:hover{
+    background-color:wheat;
+}
+.head{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.choose-theme{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+.form-control{
+    background-color: white;
+    
+}
+input[type = "radio"] {
+    appearance: none;
+    height : 1.5rem;
+    width: 1.5rem;
+    border: 2px solid;
+    border-radius: 50%;
+    
+}
+input[type = "radio"]:checked {
+    /* appearance: none;x */
+    background-color: var(--radio-color);
+}
+
+#gray{
+    --radio-color:rgb(168, 161, 162);
+}
+
+#pink{
+    --radio-color:rgb(242,172,185);
+}
+
+#blue {
+    --radio-color:rgb(68, 145, 233);
+}
+#green {
+    --radio-color:rgb(83, 225, 109);
+}
+#black {
+    --radio-color: rgb(14, 1, 4);
+}
+
+:root:has(#gray:checked){
+    background-color: gray;
+}
+:root:has(#pink:checked) {
+    background-color: pink;
+}
+:root:has(#blue:checked) {
+    background-color: lightblue;
+}
+:root:has(#green:checked) {
+    background-color: green;
+}
+:root:has(#black:checked) {
+    background-color: black;
+}
+
+.show{
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    border : 5px solid black;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
